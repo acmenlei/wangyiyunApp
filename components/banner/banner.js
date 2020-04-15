@@ -6,6 +6,9 @@ Component({
   properties: {
     bannerData:{
       type:Array
+    },
+    flag:{
+      type: Boolean
     }
   },
 

@@ -1,10 +1,23 @@
 <!--index.wxml-->
 <!-- 首页轮播图 -->
-<x-banner bannerData="{{banner}}"/>
+<x-banner bannerData="{{banner}}" flag="{{true}}"/>
 <!-- icon图标选择器 -->
 <view class="icon-container">
   <view wx:for="{{icon}}" wx:key="index">
     <view class="iconfont icon-{{item.class}}"></view>
+    <text>{{item.name}}</text>
+  </view>
+</view>
+
+<!-- 歌单推送 -->
+<view>
+<!-- 导航栏内容 -->
+  <header>ss</header>
+  <view wx:for="{{recommendData}}">
+    <!-- 右上角图标 -->
+    <view>number数</view>
+    <!-- 展示图片 -->
+    <image src="{{item.coverImgUrl}}" mode="widthFix"/>
     <text>{{item.name}}</text>
   </view>
 </view>
