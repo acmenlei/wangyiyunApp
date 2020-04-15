@@ -1,0 +1,88 @@
+/* components/recommedY/recommedY.wxss */
+@import '../../assets/iconfont/iconfont.wxss';
+.recommend_container {
+  padding: 60rpx 0 20rpx 40rpx;
+}
+.recommend_container scroll-view {
+  height: 500rpx;
+  overflow: hidden;
+}
+.recommend_container image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 20rpx;
+}
+.recommend_container .songItem {
+  position: relative;
+}
+.recommend_container .songItem .iconfont {
+  color: red;
+  display: inline;
+  font-weight: bold;
+  padding: 8rpx;
+  border: 1px solid #f2f2f2;
+  border-radius: 50%;
+  position: absolute;
+  right:80rpx;
+  top:30rpx;
+}
+.recommend_container text {
+  position: absolute;
+  font-size: 20rpx;
+  width: 280rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.recommend_container text.song_name {
+  font-size: 25rpx;
+  top:10rpx;
+  left: 120rpx;
+  height: 60rpx;
+}
+.recommend_container view.songer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top:10rpx;
+  left: 400rpx;
+  color: #333;
+  width: 80px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  height: 30rpx;
+  overflow: hidden;
+}
+.recommend_container view.songer view {
+  font-size: 20rpx;
+  white-space: nowrap;
+}
+.recommend_container view.songer view::after {
+  content: "/";
+}
+.recommend_container view.songer view:last-child::after {
+  content: "";
+}
+.header-container {
+  height: 40rpx;
+  margin-bottom: 30rpx;
+  position: relative;
+}
+.header-container h3 {
+  font-weight: 500;
+}
+.header-container .played {
+  position: absolute;
+  right: 40rpx;
+  font-size: 10px;
+  font-weight: 200;
+  border: 1px solid #ccc;
+}
+.header-container .played view {
+  display: inline-block;
+}
+.header-container .played .iconfont {
+  font-size: 20rpx;
+  margin-right: 5rpx;
+}

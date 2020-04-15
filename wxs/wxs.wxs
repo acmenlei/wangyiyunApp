@@ -1,0 +1,9 @@
+function filterNumber(number) {
+    var num = parseInt(number);
+    return Math.floor(num / 10000) + "万";
+}
+
+module.exports = {
+  filterNumber:filterNumber,
+
+} 

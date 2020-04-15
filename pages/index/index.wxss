@@ -23,3 +23,23 @@
 .icon-container text {
   font-size: 20rpx;
 }
+/* tab */
+.tabcontorl {
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+.tabcontorl view {
+  color: #ccc;
+}
+.tabcontorl view.iconfont {
+  color: #333;
+  font-weight: bold;
+  font-size: 40rpx;
+}
+.tabcontorl .active {
+  color: #333;
+}

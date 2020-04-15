@@ -1,0 +1,20 @@
+<!-- 引入wxs文件 -->
+<wxs src="../../wxs/wxs.wxs" module="config"/>
+<!-- 歌单推送 -->
+<view class="recommend_container">
+<!-- 导航栏内容 -->
+  <view class="header-container">
+    <h3>{{title}}</h3>
+    <button class="readmore" size="mini" type="plain">查看更多</button>
+  </view>
+<scroll-view  scroll-x>
+    <view class="view_item" wx:for="{{recommedData}}" wx:key="index">
+      <view class="iconfont icon-bofangsanjiaoxing">
+      {{config.filterNumber(item.playCount)}}
+      </view>
+    <!-- 展示图片 -->
+    <image src="{{item.picUrl}}" mode="widthFix" data-id="{{item.id}}"/>
+    <text>{{item.name}}</text>
+  </view>
+</scroll-view>
+</view>

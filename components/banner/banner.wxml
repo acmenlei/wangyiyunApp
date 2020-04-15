@@ -8,7 +8,7 @@
          circular
          >
     <swiper-item wx:for="{{bannerData}}" wx:key="index" class="swiper-item" >
-        <image src="{{item.pic}}" mode="widthFix"/>
+        <image src="{{item.pic}}" mode="widthFix" data-id="{{item.id}}"/>
         <label hidden="{{!flag}}" style="background:{{item.titleColor}}">{{item.typeTitle}}</label>
     </swiper-item>
  </swiper>

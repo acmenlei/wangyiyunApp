@@ -1,23 +1,27 @@
-<!--index.wxml-->
+<!-- tab栏 -->
+<view class="tabcontorl">
+	<view class="iconfont icon-menu"></view>
+	<view 
+		bind:tap="handelClick"
+		data-index="{{index}}"
+		wx:for="{{tabcontorl}}" 
+		class="{{currentIndex === index ? 'active' : ''}}" 
+		wx:key="index">
+		{{item}}
+	</view>
+	<view class="iconfont icon-search"></view>
+</view>
 <!-- 首页轮播图 -->
-<x-banner bannerData="{{banner}}" flag="{{true}}"/>
+<x-banner bannerData="{{banner}}" flag="{{true}}" />
 <!-- icon图标选择器 -->
 <view class="icon-container">
-  <view wx:for="{{icon}}" wx:key="index">
-    <view class="iconfont icon-{{item.class}}"></view>
-    <text>{{item.name}}</text>
-  </view>
+	<view wx:for="{{icon}}" wx:key="index">
+		<view class="iconfont icon-{{item.class}}"></view>
+		<text>{{item.name}}</text>
+	</view>
 </view>
+<!-- 歌单推荐 横向滚动 -->
+<x-recommedX recommedData="{{recommendData}}" title="听不腻的动人旋律" />
 
-<!-- 歌单推送 -->
-<view>
-<!-- 导航栏内容 -->
-  <header>ss</header>
-  <view wx:for="{{recommendData}}">
-    <!-- 右上角图标 -->
-    <view>number数</view>
-    <!-- 展示图片 -->
-    <image src="{{item.coverImgUrl}}" mode="widthFix"/>
-    <text>{{item.name}}</text>
-  </view>
-</view>
+<!-- 歌单推荐 纵向滚动 -->
+<x-recommedY songData="{{songData}}" title="风格推荐 享你所爱"/>

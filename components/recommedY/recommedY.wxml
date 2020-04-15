@@ -1,0 +1,30 @@
+<!--components/recommedY/recommedY.wxml-->
+<view class="recommend_container">
+	<!-- 导航栏内容 -->
+	<view class="header-container">
+		<h3>{{title}}</h3>
+		<button class="played" size="mini" type="plain">
+			<view class="iconfont icon-bofangsanjiaoxing"></view>全部播放
+		</button>
+	</view>
+	<scroll-view scroll-y>
+		<view 
+				class="songItem" 
+				wx:for="{{songData}}" 
+				wx:for-item="songItem" 
+				wx:for-index="i"
+				wx:key="i"
+				>
+			<view>
+				<image src="{{songItem.picUrl}}"></image>
+				<text class="song_name">{{songItem.name}}{{songItem.song.alias}}</text>
+				<!-- <text class="song_alias">-</text> -->
+				<view class="songer">
+					<view wx:for="{{songItem.song.artists}}" wx:key="index">{{(item.name)}}</view>
+				</view>
+        <!-- 播放按钮 -->
+        <view class="iconfont icon-bofangsanjiaoxing"></view>
+			</view>
+		</view>
+	</scroll-view>
+</view>
