@@ -1,0 +1,25 @@
+/**index.wxss**/
+/* icon导航栏的布局设置 */
+.icon-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.icon-container .iconfont {
+  color: white;
+  font-weight: bold;
+  font-size: 40rpx;
+  text-align: center;
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: linear-gradient(to left, rgb(255, 11, 11), rgb(255, 73, 73));
+  background-attachment: fixed;
+  border-radius: 50%;
+}
+.icon-container>view {
+  text-align: center;
+}
+.icon-container text {
+  font-size: 20rpx;
+}

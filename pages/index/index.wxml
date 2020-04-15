@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<!-- 首页轮播图 -->
+<x-banner bannerData="{{banner}}"/>
+<!-- icon图标选择器 -->
+<view class="icon-container">
+  <view wx:for="{{icon}}" wx:key="index">
+    <view class="iconfont icon-{{item.class}}"></view>
+    <text>{{item.name}}</text>
+  </view>
+</view>

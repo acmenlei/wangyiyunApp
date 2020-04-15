@@ -1,0 +1,8 @@
+/* components/banner.wxss */
+.container {
+  width: 100%;
+  text-align: center;
+}
+.container image {
+  border-radius: 0.5rem;
+}

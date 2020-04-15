@@ -1,0 +1,14 @@
+<!--components/banner.wxml-->
+<view class="container">
+ <swiper autoplay
+         interval="3000"
+         indicator-dots
+         indicator-active-color="red"
+         indicator-color="#f2f2f2"
+         circular
+         >
+ <swiper-item wx:for="{{bannerData}}" wx:key="index" >
+  <image src="{{item.pic}}" mode="widthFix"/>
+ </swiper-item>
+ </swiper>
+</view>

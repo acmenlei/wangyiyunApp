@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "x-banner":"../../components/banner/banner"
+  },
+  "navigationBarTitleText": "网易云音乐"
+}
