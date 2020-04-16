@@ -16,13 +16,17 @@ Component({
    * 组件的初始数据
    */
   data: {
-
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-
+    handelClickDetailPage(e) {
+      const id = e.currentTarget.dataset.song_id
+        wx.navigateTo({
+          url: '../../pages/detail/detail?ids='+id
+        })
+    }
   }
 })

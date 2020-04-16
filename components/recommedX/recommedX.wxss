@@ -21,7 +21,7 @@
   right: 40rpx;
   font-size: 10px;
   font-weight: 200;
-  border: 1px solid #ccc;
+  border: 1px solid #f2f2f2;
 }
 .recommend_container scroll-view {
   width: 100%;

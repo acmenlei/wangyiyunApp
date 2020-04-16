@@ -4,6 +4,5 @@ function filterNumber(number) {
 }
 
 module.exports = {
-  filterNumber:filterNumber,
-
+  filterNumber:filterNumber
 } 

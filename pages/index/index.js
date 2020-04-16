@@ -1,5 +1,4 @@
 import request from '../../network/request'
-
 Page({
   data:{
     banner:[],
@@ -37,6 +36,8 @@ Page({
     request({
       url:'/personalized/newsong'
     }).then(res => {
+      // console.log(res.data.result);
+      
       this.setData({
         songData:res.data.result
       })

@@ -1,0 +1,12 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+  <view class="mask" style="background-image:url({{songdetail.al.picUrl}})"></view>
+  <view class="song_name">{{songdetail.name}}-<text>{{songdetail.ar[0].name}}</text></view>
+  <view class="image-container">
+    <image src="{{songdetail.al.picUrl}}"/>
+  </view>
+  <!-- 按钮 交互层 -->
+  <view>
+    
+  </view>
+</view>

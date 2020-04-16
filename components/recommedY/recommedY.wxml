@@ -14,6 +14,8 @@
 				wx:for-item="songItem" 
 				wx:for-index="i"
 				wx:key="i"
+				data-song_id="{{songItem.id}}"
+				bind:tap="handelClickDetailPage"
 				>
 			<view>
 				<image src="{{songItem.picUrl}}"></image>

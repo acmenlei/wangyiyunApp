@@ -1,0 +1,44 @@
+/* pages/detail/detail.wxss */
+.container {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+.container .mask {
+  width: 100vw;
+  height: 100vh;
+  z-index: -99;
+  position: absolute;
+  top: 0; left: 0;
+  opacity: .5;
+  filter: blur(20px);
+  backdrop-filter: blur(8px);
+  background-size: 100% 100%;
+}
+.container .song_name {
+  color: white;
+  margin-top: 40px;
+}
+.container .image-container {
+  position: relative;
+  background: rgba(16, 15, 15, 0.8);
+  width: 500rpx;
+  height: 500rpx;
+  border-radius: 50%;
+  border: 3px solid #333;
+  margin: 50px auto;
+  animation: rotate 10s ease-in infinite;
+}
+.container image {
+  position: absolute;
+  border-radius: 50%;
+  width: 400rpx;
+  height: 400rpx;
+  left: 50%;top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rotate {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
