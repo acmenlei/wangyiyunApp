@@ -34,12 +34,16 @@
 }
 .tabcontorl view {
   color: #ccc;
+  font-size: 30rpx;
 }
+
 .tabcontorl view.iconfont {
   color: #333;
   font-weight: bold;
   font-size: 40rpx;
 }
 .tabcontorl .active {
-  color: #333;
+  transition: transform .6s;
+  color: #222;
+  transform: scale(1.06);
 }

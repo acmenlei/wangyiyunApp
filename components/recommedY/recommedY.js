@@ -26,7 +26,8 @@ Component({
       const id = e.currentTarget.dataset.song_id
         wx.navigateTo({
           url: '../../pages/detail/detail?ids='+id
-        })
+        });
+        wx.setStorageSync('songs', this.properties.songData);
     }
   }
 })

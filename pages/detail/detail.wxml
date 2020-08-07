@@ -1,12 +1,34 @@
 <!--pages/detail/detail.wxml-->
 <view class="container">
-  <view class="mask" style="background-image:url({{songdetail.al.picUrl}})"></view>
+  <view class="mask" style="background:url({{songdetail.al.picUrl}}) center/cover no-repeat">
+      <view class="top-mask"></view>
+  </view>
   <view class="song_name">{{songdetail.name}}-<text>{{songdetail.ar[0].name}}</text></view>
-  <view class="image-container">
+  <view class="image-container {{state ? 'plaing' : ''}}">
     <image src="{{songdetail.al.picUrl}}"/>
   </view>
   <!-- 按钮 交互层 -->
-  <view>
-    
+  <view class="tabcontrol">
+     <view class="tab">
+        <icon class="iconfont icon-iconfontxihuan"></icon>
+        <icon class="iconfont icon-xiazai"></icon>
+        <icon class="iconfont icon-pinglun"></icon>
+        <icon class="iconfont icon-gengduo"></icon>
+     </view>
+     <view class="progress">
+      <text>{{current}}</text>
+      <view>
+        <text style="left:{{progress}}"></text>
+        <text style="width:{{progress}}"></text>
+      </view>
+      <text>{{music_length}}</text>
+     </view>
+     <view class="playorpause">
+     <icon class="iconfont icon-{{pauseState}}" bindtap="changePauseModel"></icon>
+     <icon class="iconfont icon-shangyishoushangyige" bindtap="preMusic"></icon>
+     <icon class="iconfont icon-{{state ? 'zanting' : 'bofang'}}" bindtap="HandelState"></icon>
+     <icon class="iconfont icon-xiayigexiayishou" bindtap="nextMusic"></icon>
+     <icon class="iconfont icon-liebiao"></icon>
+     </view>
   </view>
 </view>
