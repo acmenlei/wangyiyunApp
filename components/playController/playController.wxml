@@ -1,0 +1,6 @@
+<view class="container">
+  <image src="{{songdetail.al.picUrl}}" class="plaing"></image>
+  <view class="song_name">{{songdetail.name}}</view>
+  <icon class="iconfont icon-zanting pause"></icon>
+  <icon class="iconfont icon-liebiao"></icon>
+</view>

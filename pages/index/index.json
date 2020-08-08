@@ -2,7 +2,8 @@
   "usingComponents": {
     "x-banner":"../../components/banner/banner",
     "x-recommedX":"../../components/recommedX/recommedX",
-    "x-recommedY":"../../components/recommedY/recommedY"
+    "x-recommedY":"../../components/recommedY/recommedY",
+    "play-controller":"../../components/playController/playController"
   },
   "navigationBarTitleText": "网易云音乐"
 }

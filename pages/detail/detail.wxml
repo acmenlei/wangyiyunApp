@@ -7,12 +7,13 @@
   <view class="image-container {{state ? 'plaing' : ''}}">
     <image src="{{songdetail.al.picUrl}}"/>
   </view>
+  <view class="song_Text">{{Text}}</view>
   <!-- 按钮 交互层 -->
   <view class="tabcontrol">
      <view class="tab">
-        <icon class="iconfont icon-iconfontxihuan"></icon>
+        <icon class="iconfont icon-{{isLike ? 'xihuan' : 'iconfontxihuan'}}" bindtap="songHandelLike"></icon>
         <icon class="iconfont icon-xiazai"></icon>
-        <icon class="iconfont icon-pinglun"></icon>
+        <icon class="iconfont icon-pinglun"><text></text></icon>
         <icon class="iconfont icon-gengduo"></icon>
      </view>
      <view class="progress">

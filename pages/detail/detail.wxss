@@ -54,6 +54,11 @@
 .container .plaing {
   animation: rotate 10s linear infinite;
 }
+.container .song_Text {
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 30rpx;
+}
 @keyframes rotate {
   to {transform: rotate(360deg);}
 }

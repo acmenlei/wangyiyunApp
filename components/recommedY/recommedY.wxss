@@ -1,7 +1,8 @@
 /* components/recommedY/recommedY.wxss */
 @import '../../assets/iconfont/iconfont.wxss';
 .recommend_container {
-  padding: 60rpx 0 20rpx 40rpx;
+  padding: 60rpx 0 100rpx 40rpx;
+  
 }
 .recommend_container scroll-view {
   height: 500rpx;
@@ -13,6 +14,8 @@
   border-radius: 20rpx;
 }
 .recommend_container .songItem {
+  width: 100vw;
+  height: 120rpx;
   position: relative;
 }
 .recommend_container .songItem .iconfont {
@@ -36,10 +39,10 @@
   overflow: hidden;
 }
 .recommend_container text.song_name {
-  font-size: 25rpx;
+  font-size: 26rpx;
   top:10rpx;
   left: 120rpx;
-  height: 60rpx;
+  height: 80rpx;
 }
 .recommend_container view.songer {
   position: absolute;
@@ -55,7 +58,7 @@
   overflow: hidden;
 }
 .recommend_container view.songer view {
-  font-size: 20rpx;
+  font-size: 25rpx;
   white-space: nowrap;
 }
 .recommend_container view.songer view::after {
@@ -85,4 +88,10 @@
 .header-container .played .iconfont {
   font-size: 20rpx;
   margin-right: 5rpx;
+}
+.oneplay {
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  top: 0;
 }

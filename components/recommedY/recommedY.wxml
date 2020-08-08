@@ -22,10 +22,10 @@
 				<text class="song_name">{{songItem.name}}{{songItem.song.alias}}</text>
 				<!-- <text class="song_alias">-</text> -->
 				<view class="songer">
-					<view wx:for="{{songItem.song.artists}}" wx:key="index">{{(item.name)}}</view>
+					<view wx:for="{{songItem.song.artists}}" wx:key="index">-{{(item.name)}}</view>
 				</view>
         <!-- 播放按钮 -->
-        <view class="iconfont icon-bofangsanjiaoxing"></view>
+        <view class="iconfont icon-bofangsanjiaoxing oneplay"></view>
 			</view>
 		</view>
 	</scroll-view>

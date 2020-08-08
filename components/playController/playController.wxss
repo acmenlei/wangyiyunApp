@@ -1,0 +1,37 @@
+@import '../../assets/iconfont/iconfont.wxss';
+.container {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100rpx;
+  background: rgba(255, 255, 255, .9);
+  /* background: red; */
+  position: fixed;
+  bottom: 0;
+}
+.container image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin: 20rpx;
+}
+
+.container .song_name {
+  flex: 5;
+  font-size: 25rpx;
+}
+.container icon {
+  flex: 1;
+  font-size: 40rpx;
+  color: red;
+}
+.container icon.pause {
+  padding-top: 10rpx;
+  font-size: 50rpx;
+}
+@keyframes rotate {
+  to {transform: rotate(360deg);}
+}
+.container .plaing {
+  animation: rotate 10s linear infinite;
+}

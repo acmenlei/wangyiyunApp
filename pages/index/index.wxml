@@ -25,3 +25,6 @@
 
 <!-- 歌单推荐 纵向滚动 -->
 <x-recommedY songData="{{songData}}" title="风格推荐 享你所爱"/>
+
+<!-- 播放控制器 -->
+<play-controller/>
